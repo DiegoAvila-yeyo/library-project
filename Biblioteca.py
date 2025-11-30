@@ -1,4 +1,4 @@
-class Libreria:
+class Libro:
     def __init__(self, tit, cod, aut, edi):
         self.__titulo = tit
         self.__codigo = cod
@@ -107,15 +107,15 @@ prestamos = [None] * MAX_CAPACIDAD
 total_libros = 0 
 total_prestamos = 0
 
-librero[0] = Libreria("El Principito", 101, "Antoine de Saint-Exupery", "Salamandra")
+librero[0] = Libro("El Principito", 101, "Antoine de Saint-Exupery", "Salamandra")
 total_libros += 1
-librero[1] = Libreria("Cien anios de soledad", 102, "Gabriel Garcia Marquez", "Diana")
+librero[1] = Libro("Cien anios de soledad", 102, "Gabriel Garcia Marquez", "Diana")
 total_libros += 1
-librero[2] = Libreria("Don Quijote", 103, "Miguel de Cervantes", "Alfaguara")
+librero[2] = Libro("Don Quijote", 103, "Miguel de Cervantes", "Alfaguara")
 total_libros += 1
-librero[3] = Libreria("Harry Potter", 104, "J.K. Rowling", "Salamandra")
+librero[3] = Libro("Harry Potter", 104, "J.K. Rowling", "Salamandra")
 total_libros += 1
-librero[4] = Libreria("Steve Jobs", 105, "Walter Isaacson", "Debate")
+librero[4] = Libro("Steve Jobs", 105, "Walter Isaacson", "Debate")
 total_libros += 1
 
 print("Sistema iniciado ", total_libros, "libros cargados correctamente.")
@@ -153,7 +153,7 @@ for k in range(n):
         print("Introduce la Editorial:")
         edi = input()
 
-        nuevo_libro = Libreria(tit, new_cod, aut, edi)
+        nuevo_libro = Libro(tit, new_cod, aut, edi)
         librero[total_libros] = nuevo_libro
         total_libros += 1
         print("Libro guardado.")
